@@ -8,7 +8,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate', // auto-updates the service worker
       workbox: {
-        runtimeCaching: [
+        runtimeCaching: [ 
           {
             urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com/,
             handler: 'CacheFirst',
